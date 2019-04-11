@@ -1,0 +1,22 @@
+{
+  "name": "SwiftConfettiView",
+  "version": "0.1.0",
+  "summary": "A short description of SwiftConfettiView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Uğur Ethem AYDIN/SwiftConfettiView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Uğur Ethem AYDIN": "ugur@metromedya.com"
+  },
+  "source": {
+    "git": "https://github.com/Uğur Ethem AYDIN/SwiftConfettiView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "SwiftConfettiView/Classes/**/*"
+}
