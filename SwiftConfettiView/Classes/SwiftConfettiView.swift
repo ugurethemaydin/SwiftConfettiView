@@ -86,6 +86,7 @@ public class SwiftConfettiView: UIView {
         }
 
         let path = Bundle(for: SwiftConfettiView.self).path(forResource: "SwiftConfettiView", ofType: "bundle")
+        
         let bundle = Bundle(path: path!)
         let imagePath = bundle?.path(forResource: fileName, ofType: "png")
         let url = URL(fileURLWithPath: imagePath!)

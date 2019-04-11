@@ -1,27 +1,16 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
   - SwiftConfettiView (0.1.0)
 
 DEPENDENCIES:
-  - FBSnapshotTestCase (~> 2.1.4)
   - SwiftConfettiView (from `../`)
-
-SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
-    - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
   SwiftConfettiView:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  SwiftConfettiView: f8dbf45c4adb459530f211256bf78ab8217f85ad
+  SwiftConfettiView: 75f535e9f4ed5d54fa8e2c67640b17766a49d72e
 
-PODFILE CHECKSUM: 3acaa51ca4138daac4c52042cc8e0bdefe323b45
+PODFILE CHECKSUM: 3947e44fe6a15b6938a65f069404878e21ec4f17
 
-COCOAPODS: 1.6.0
+COCOAPODS: 1.7.0.beta.3
