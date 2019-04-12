@@ -19,6 +19,8 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
+iOS 9.3 or later and Swift 4 
+
 ## Installation
 
 SwiftConfettiView is available through [CocoaPods](https://cocoapods.org). To install
@@ -137,9 +139,22 @@ confettiView.isActive()
 Returns `true` if it is being displayed, and `false` if it is not.
 
 
+
+
+## Who is using this repo?
+
+ * ####[Direct Message for Whatsapp](http://directmessage.xyz) - chat without adding a contact!
+ *Type number, press the direct message button and start whatsapp chat without saving new contact .Keep it fast,secret and clean.*
+ 
+</br>
+
+
+```if you want your app to be written in this section, please email us. ```
+ 
+ 
 ## Author
 
-Uğur Ethem AYDIN, ugur@metromedya.com
+Uğur Ethem AYDIN, me@ugur.me
 
 ## License
 
