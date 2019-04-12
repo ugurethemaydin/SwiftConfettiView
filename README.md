@@ -1,7 +1,9 @@
 # SwiftConfettiView
 Swift Confetti View ! Who doesn't like confetti?
 
-
+![language](https://img.shields.io/badge/Language-%20Swift%20-orange.svg)
+![CI Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
+[
 [![CI Status](https://img.shields.io/travis/ugurethemaydin/SwiftConfettiView.svg?style=flat)](https://travis-ci.org/ugurethemaydin/SwiftConfettiView)
 [![Version](https://img.shields.io/cocoapods/v/SwiftConfettiView.svg?style=flat)](https://cocoapods.org/pods/SwiftConfettiView)
 [![License](https://img.shields.io/cocoapods/l/SwiftConfettiView.svg?style=flat)](https://cocoapods.org/pods/SwiftConfettiView)
