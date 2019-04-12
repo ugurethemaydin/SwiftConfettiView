@@ -143,7 +143,7 @@ Returns `true` if it is being displayed, and `false` if it is not.
 
 ## Who is using this repo?
 
- * ####[Direct Message for Whatsapp](http://directmessage.xyz) - chat without adding a contact!
+ * [Direct Message for Whatsapp](http://directmessage.xyz) - chat without adding a contact! <br>
  *Type number, press the direct message button and start whatsapp chat without saving new contact .Keep it fast,secret and clean.*
  
 </br>
