@@ -1,4 +1,5 @@
-# SwiftConfettiView
+# Swift Confetti View      [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Who%20doesn%27t%20like%20confetti!%20🎉%20%20:&url=https://github.com/ugurethemaydin/SwiftConfettiView&hashtags=cocoapods,repo,swiftconfettiview,developers,swift,ios,confetti,github)
+
 Swift Confetti View ! Who doesn't like confetti?
 
 ![language](https://img.shields.io/badge/Language-%20Swift%20-orange.svg)
