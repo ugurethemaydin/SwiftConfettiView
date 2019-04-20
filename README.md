@@ -151,15 +151,20 @@ Returns `true` if it is being displayed, and `false` if it is not.
 
 
 ```if you want your app to be written in this section, please email us. ```
- 
- 
+
+
+## Related
+
+These projects enhance or use SAConfettiView:
+Unfortunately, this library has not been updated for a long time and doesn't work in swift4+. So I created this independent library and I use it in my projects.
+
 ## Author
 
 Uğur Ethem AYDIN, me@ugur.me
 
 ## License
 
-SwiftConfettiView is available under the MIT license. See the LICENSE file for more info.
+Swift Confetti View is available under the MIT license. See the LICENSE file for more info.
 
 Copyright (c) 2019 Uğur Ethem AYDIN
 
