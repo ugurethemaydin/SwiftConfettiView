@@ -147,7 +147,11 @@ Returns `true` if it is being displayed, and `false` if it is not.
  * [Direct Message for Whatsapp](http://directmessage.xyz) - chat without adding a contact! <br>
  *Type number, press the direct message button and start whatsapp chat without saving new contact .Keep it fast,secret and clean.*
  
-</br>
+ 
+ * [Qwote](https://apps.apple.com/app/id1514390362) - Capture, Format & Share quotes <br>
+ *Qwote is a quick way to share text snippets or quotes as beautifully formatted images.*
+ 
+ </br>
 
 
 ```if you want your app to be written in this section, please email us. ```
@@ -160,7 +164,7 @@ Unfortunately, this library has not been updated for a long time and doesn't wor
 
 ## Author
 
-Uğur Ethem AYDIN, me@ugur.me
+Uğur Ethem AYDIN, ugur@metromedya.com
 
 ## License
 
