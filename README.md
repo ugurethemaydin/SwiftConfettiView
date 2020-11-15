@@ -156,6 +156,14 @@ Returns `true` if it is being displayed, and `false` if it is not.
 
 ```if you want your app to be written in this section, please email us. ```
 
+## OTHERs Repo
+
+### CheckDevice
+How to detect iOS device models and screen size?
+
+CheckDevice is detected the current  device model and screen sizes.
+
+[CheckDevice](https://github.com/ugurethemaydin/checkDevice)
 
 ## Related
 
