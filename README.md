@@ -151,6 +151,9 @@ Returns `true` if it is being displayed, and `false` if it is not.
  * [Qwote](https://apps.apple.com/app/id1514390362) - Capture, Format & Share quotes <br>
  *Qwote is a quick way to share text snippets or quotes as beautifully formatted images.*
  
+ * [Soapbox](https://apps.apple.com/app/id1529283270) - Chat with and Make New Friends <br>
+ *Soapbox is a different take Good conversations don’t need good lighting. *
+ 
  </br>
 
 
@@ -167,8 +170,8 @@ CheckDevice is detected the current  device model and screen sizes.
 
 ## Related
 
-These projects enhance or use SAConfettiView:
-Unfortunately, this library has not been updated for a long time and doesn't work in swift4+. So I created this independent library and I use it in my projects.
+This project enhance or use SAConfettiView:
+Unfortunately, SAConfettiView has not been updated for a long time and doesn't work in swift4+. So I am created and developing this independent library and I use it in my projects.
 
 ## Author
 
