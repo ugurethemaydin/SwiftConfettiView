@@ -2,7 +2,7 @@
   "name": "SwiftConfettiView",
   "version": "0.1.0",
   "summary": "Confetti! Who doesn't like confetti?'",
-  "description": "SAConfettiView is the quickest way to add confetti to your application and make your users feel rewarded.",
+  "description": "SwiftConfettiView is the quickest way to add confetti to your application and make your users feel rewarded.",
   "homepage": "https://github.com/ugurethemaydin/SwiftConfettiView",
   "license": {
     "type": "MIT",

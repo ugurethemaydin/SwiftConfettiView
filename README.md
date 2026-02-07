@@ -1,6 +1,6 @@
 # Swift Confetti View      [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Who%20doesn%27t%20like%20confetti!%20🎉%20%20:&url=https://github.com/ugurethemaydin/SwiftConfettiView&hashtags=cocoapods,repo,swiftconfettiview,developers,swift,ios,confetti,github)
 
-Swift Confetti View ! Who doesn't like confetti?
+SwiftConfettiView — Celebrate every moment in your app
 
 ![language](https://img.shields.io/badge/Language-%20Swift%20-orange.svg)
 ![CI Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
@@ -167,11 +167,6 @@ How to detect iOS device models and screen size?
 CheckDevice is detected the current  device model and screen sizes.
 
 [CheckDevice](https://github.com/ugurethemaydin/checkDevice)
-
-## Related
-
-This project enhance or use SAConfettiView:
-Unfortunately, SAConfettiView has not been updated for a long time and doesn't work in swift4+. So I am created and developing this independent library and I use it in my projects.
 
 ## Author
 
