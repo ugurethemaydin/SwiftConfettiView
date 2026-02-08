@@ -1,4 +1,4 @@
-# Swift Confetti View      [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Who%20doesn%27t%20like%20confetti!%20🎉%20%20:&url=https://github.com/ugurethemaydin/SwiftConfettiView&hashtags=cocoapods,repo,swiftconfettiview,developers,swift,ios,confetti,github)
+# SwiftConfettiView      [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Who%20doesn%27t%20like%20confetti!%20🎉%20%20:&url=https://github.com/ugurethemaydin/SwiftConfettiView&hashtags=cocoapods,repo,swiftconfettiview,developers,swift,ios,confetti,github)
 
 SwiftConfettiView — Celebrate every moment in your app
 
@@ -20,13 +20,33 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-iOS 9.3 or later and Swift 4 
+iOS 13.0+ · Swift 5.0+
 
 ## Installation
 
-SwiftConfettiView is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+### Swift Package Manager
 
+Add SwiftConfettiView to your project via Xcode:
+
+1. File → Add Package Dependencies
+2. Enter the repository URL:
+
+```
+https://github.com/ugurethemaydin/SwiftConfettiView.git
+```
+
+Or add it to your `Package.swift`:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/ugurethemaydin/SwiftConfettiView.git", from: "1.0.0")
+]
+```
+
+### CocoaPods
+
+SwiftConfettiView is also available through [CocoaPods](https://cocoapods.org). To install
+it, simply add the following line to your Podfile:
 
 ```swift
 pod 'SwiftConfettiView'
@@ -41,6 +61,8 @@ To manually install SwiftConfettiView, simply add `SwiftConfettiView.swift` to y
 
 ## Usage
 
+### UIKit
+
 Creating a SwiftConfettiView is the same as creating a UIView:
 
 ```swift
@@ -53,56 +75,46 @@ Don't forget to add the subview!
 self.view.addSubview(confettiView)
 ```
 
+### SwiftUI
+
+```swift
+import SwiftConfettiView
+
+struct ContentView: View {
+    @State private var showConfetti = false
+
+    var body: some View {
+        ZStack {
+            ConfettiView(type: .confetti, isActive: $showConfetti)
+
+            Button("Celebrate!") {
+                showConfetti.toggle()
+            }
+        }
+    }
+}
+```
+
 ### Types
 
-Pick one of the preconfigured types of confetti with the `.type` property, or create your own by providing a custom image. This property defaults to the `.Confetti` type.
+Pick one of the preconfigured types of confetti with the `.type` property, or create your own by providing a custom image. This property defaults to the `.confetti` type.
 
-##### `.Confetti`
-
-![confetti](https://cloud.githubusercontent.com/assets/11940172/11819440/c9db329e-a39a-11e5-9284-b0171bee0f24.gif)
-
-```swift
-confettiView.type = .Confetti
-```
-
-##### `.Triangle`
-
-![triangle](https://cloud.githubusercontent.com/assets/11940172/11819211/9b8b758a-a399-11e5-8ed3-2eb92f633628.gif)
-
-```swift
-confettiView.type = .Triangle
-```
-
-##### `.Star`
-
-![star](https://cloud.githubusercontent.com/assets/11940172/11819401/90a2188a-a39a-11e5-8a03-ddca3fb52e72.gif)
-
-```swift
-confettiView.type = .Star
-```
-
-##### `.Diamond`
-
-![diamond](https://cloud.githubusercontent.com/assets/11940172/11819275/f1c83c08-a399-11e5-8d40-85e9a1879526.gif)
-
-```swift
-confettiView.type = .Diamond
-```
-
-##### `.Image`
-
-![image](https://cloud.githubusercontent.com/assets/11940172/11819363/5f4f0dba-a39a-11e5-826b-d198113f50dd.gif)
-
-```swift
-confettiView.type = .Image(UIImage(named: "smiley"))
-```
+| Type | Code |
+|------|------|
+| `.confetti` | `confettiView.type = .confetti` |
+| `.triangle` | `confettiView.type = .triangle` |
+| `.star` | `confettiView.type = .star` |
+| `.diamond` | `confettiView.type = .diamond` |
+| `.image` | `confettiView.type = .image(UIImage(named: "smiley"))` |
+| `.text` | `confettiView.type = .text("🎉")` |
+| `.sfSymbol` | `confettiView.type = .sfSymbol("star.fill")` |
 
 ### Colors
 
-Set the colors of the confetti with the `.colors` property. This property has a default value of multiple colors. 
+Set the colors of the confetti with the `.colors` property. This property has a default value of multiple colors.
 
 ``` swift
-confettiView.colors = [UIColor.redColor(), UIColor.greenColor(), UIColor.blueColor()]
+confettiView.colors = [.red, .green, .blue]
 ```
 
 ### Intensity
@@ -111,6 +123,73 @@ The intensity refers to how many particles are generated and how quickly they fa
 
 ``` swift
 confettiView.intensity = 0.75
+```
+
+### Emission Origin
+
+By default, confetti rains from the top edge. Set `emitterOrigin` to emit from a specific point:
+
+```swift
+confettiView.emitterOrigin = CGPoint(x: 200, y: 300)
+```
+
+### Emission Angle & Spread
+
+Control the direction and cone width of particle emission (in radians):
+
+```swift
+confettiView.emissionAngle = 3 * .pi / 2  // upward
+confettiView.spread = .pi / 4              // narrow cone
+```
+
+For a 360-degree firework effect:
+
+```swift
+confettiView.spread = 2 * .pi
+```
+
+### Burst Mode
+
+For a one-shot burst instead of continuous rain, set `burstCount`:
+
+```swift
+confettiView.burstCount = 100
+```
+
+The confetti stops automatically after emitting the specified number of particles.
+
+### Haptic Feedback
+
+Trigger haptic feedback when confetti starts:
+
+```swift
+confettiView.hapticFeedback = true
+```
+
+### Depth Effect
+
+Enable dual-layer parallax for a 3D depth illusion. A background layer (smaller, slower, dimmer particles) is added behind the main foreground layer:
+
+```swift
+confettiView.addDepth = true
+```
+
+### Fade Out
+
+By default, stopping confetti fades out smoothly. Disable for an abrupt stop:
+
+```swift
+confettiView.fadeOut = false  // default is true
+```
+
+### Callback
+
+Get notified when confetti stops:
+
+```swift
+confettiView.onStop = {
+    print("Confetti finished!")
+}
 ```
 
 ### Starting
@@ -134,37 +213,72 @@ confettiView.stopConfetti()
 To check if the confetti is active and currently being displayed, use
 
 ``` swift
-confettiView.isActive()
+confettiView.isActive
 ```
 
 Returns `true` if it is being displayed, and `false` if it is not.
 
+### SwiftUI — Advanced Examples
 
+**Point emission (burst from a button):**
 
+```swift
+ConfettiView(
+    isActive: $isActive,
+    emitterOrigin: buttonCenter,
+    emissionAngle: 3 * .pi / 2,
+    burstCount: 80
+)
+```
 
-## Who is using the repo?
+**Firework effect (360-degree burst):**
+
+```swift
+ConfettiView(
+    type: .star,
+    isActive: $isActive,
+    emitterOrigin: CGPoint(x: 200, y: 400),
+    spread: 2 * .pi,
+    burstCount: 100,
+    hapticFeedback: true
+)
+```
+
+**Emoji confetti:**
+
+```swift
+ConfettiView(
+    type: .text("🎉"),
+    isActive: $showConfetti
+)
+```
+
+**Depth effect (parallax rain):**
+
+```swift
+ConfettiView(
+    isActive: $showConfetti,
+    addDepth: true
+)
+```
+
+## Apps Using SwiftConfettiView
 
  * [Direct Message for Whatsapp](http://directmessage.xyz) - chat without adding a contact! <br>
- *Type number, press the direct message button and start whatsapp chat without saving new contact .Keep it fast,secret and clean.*
- 
- 
+ *Type a number, tap the direct message button, and start a WhatsApp chat without saving the contact. Fast, private, and clean.*
+
  * [Qwote](https://apps.apple.com/app/id1514390362) - Capture, Format & Share quotes <br>
  *Qwote is a quick way to share text snippets or quotes as beautifully formatted images.*
- 
+
  * [Soapbox](https://apps.apple.com/app/id1529283270) - Chat with and Make New Friends <br>
- *Soapbox is a different take Good conversations don’t need good lighting. *
- 
- </br>
+ *Good conversations don't need good lighting.*
 
+Want your app listed here? Open a pull request or email us.
 
-```if you want your app to be written in this section, please email us. ```
-
-## OTHERs Repo
+## Other Libraries
 
 ### CheckDevice
-How to detect iOS device models and screen size?
-
-CheckDevice is detected the current  device model and screen sizes.
+Detect iOS device models and screen sizes at runtime.
 
 [CheckDevice](https://github.com/ugurethemaydin/checkDevice)
 
@@ -174,25 +288,4 @@ Uğur Ethem AYDIN, ugur@metromedya.com
 
 ## License
 
-Swift Confetti View is available under the MIT license. See the LICENSE file for more info.
-
-Copyright (c) 2019 Uğur Ethem AYDIN
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
+SwiftConfettiView is available under the MIT license. See the [LICENSE](LICENSE) file for details.

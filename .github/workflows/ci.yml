@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Build
+      run: xcodebuild build -scheme SwiftConfettiView -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 16'
+
+    - name: Test
+      run: xcodebuild test -scheme SwiftConfettiView -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 16'
+
+  spm:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Build (SPM)
+      run: xcodebuild build -scheme SwiftConfettiView -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 16'

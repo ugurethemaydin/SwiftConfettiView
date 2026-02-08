@@ -1,7 +1,7 @@
 {
   "name": "SwiftConfettiView",
-  "version": "0.1.0",
-  "summary": "Confetti! Who doesn't like confetti?'",
+  "version": "2.0.0",
+  "summary": "Celebrate every moment in your app",
   "description": "SwiftConfettiView is the quickest way to add confetti to your application and make your users feel rewarded.",
   "homepage": "https://github.com/ugurethemaydin/SwiftConfettiView",
   "license": {
@@ -9,25 +9,28 @@
     "file": "LICENSE"
   },
   "authors": {
-    "Uğur Ethem AYDIN": "ugur@metromedya.com"
+    "Uğur Ethem AYDIN": "ugur@metromedya.com"
   },
   "source": {
     "git": "https://github.com/ugurethemaydin/SwiftConfettiView.git",
-    "tag": "0.1.0"
+    "tag": "2.0.0"
   },
+  "social_media_url": "https://twitter.com/ugaborek",
   "platforms": {
-    "ios": "8.0"
+    "ios": "13.0"
   },
-  "requires_arc": true,
+  "swift_versions": "5.0",
   "source_files": "SwiftConfettiView/Classes/**/*",
   "resource_bundles": {
     "SwiftConfettiView": [
-      "SwiftConfettiView/Assets/*.png"
+      "SwiftConfettiView/Assets/*.png",
+      "SwiftConfettiView/Assets/*.mp3"
     ]
   },
-  "resources": "SwiftConfettiView/**/*.{png,json}",
   "frameworks": [
     "UIKit",
-    "QuartzCore"
-  ]
+    "QuartzCore",
+    "AVFoundation"
+  ],
+  "swift_version": "5.0"
 }
