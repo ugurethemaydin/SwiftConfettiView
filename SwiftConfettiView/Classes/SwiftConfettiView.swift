@@ -21,6 +21,23 @@ public class SwiftConfettiView: UIView {
         case text(String)       // emoji: .text("🎉")
         case sfSymbol(String)   // SF Symbol: .sfSymbol("star.fill")
 
+        // MARK: v1 migration shims — Xcode Fix-it: "Replace 'X' with 'x'"
+
+        @available(*, unavailable, renamed: "confetti")
+        case Confetti
+
+        @available(*, unavailable, renamed: "triangle")
+        case Triangle
+
+        @available(*, unavailable, renamed: "star")
+        case Star
+
+        @available(*, unavailable, renamed: "diamond")
+        case Diamond
+
+        @available(*, unavailable, renamed: "image")
+        case Image(UIImage)
+
         /// Compare types by case (ignoring associated values for image).
         public func isSameType(as other: ConfettiType) -> Bool {
             switch (self, other) {
@@ -155,6 +172,18 @@ public class SwiftConfettiView: UIView {
 
     public override init(frame: CGRect) {
         super.init(frame: frame)
+    }
+
+    public override func willMove(toWindow newWindow: UIWindow?) {
+        super.willMove(toWindow: newWindow)
+        if newWindow == nil {
+            // View leaving screen — guarantee cleanup regardless of isActive state.
+            // Increment generation to invalidate any pending completion blocks.
+            pendingStart = false
+            emitterGeneration &+= 1
+            cleanupEmitters()
+            isActive = false
+        }
     }
 
     public override func layoutSubviews() {
@@ -363,7 +392,8 @@ public class SwiftConfettiView: UIView {
             CATransaction.begin()
             CATransaction.setCompletionBlock { [weak self] in
                 guard let self = self, self.emitterGeneration == capturedGeneration else { return }
-                self.cleanupEmitters()
+                self.foregroundEmitter?.birthRate = 0
+                self.backgroundEmitter?.birthRate = 0
                 self.isActive = false
                 self.onStop?()
             }
@@ -405,8 +435,12 @@ public class SwiftConfettiView: UIView {
         let capturedGeneration = emitterGeneration
         let fadeDuration = 1.0
 
+        // Mark inactive IMMEDIATELY so startConfetti() can be called again
+        // without waiting for the fade animation to complete.
         foregroundEmitter?.birthRate = 0
         backgroundEmitter?.birthRate = 0
+        isActive = false
+        onStop?()
 
         let fadeAnim = CABasicAnimation(keyPath: #keyPath(CAEmitterLayer.opacity))
         fadeAnim.fromValue = 1.0
@@ -420,8 +454,6 @@ public class SwiftConfettiView: UIView {
         CATransaction.setCompletionBlock { [weak self] in
             guard let self = self, self.emitterGeneration == capturedGeneration else { return }
             self.cleanupEmitters()
-            self.isActive = false
-            self.onStop?()
         }
 
         foregroundEmitter?.add(fadeAnim, forKey: "fadeOut")

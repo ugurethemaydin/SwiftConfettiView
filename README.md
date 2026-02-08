@@ -1,6 +1,10 @@
-# SwiftConfettiView      [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Who%20doesn%27t%20like%20confetti!%20🎉%20%20:&url=https://github.com/ugurethemaydin/SwiftConfettiView&hashtags=cocoapods,repo,swiftconfettiview,developers,swift,ios,confetti,github)
+<p align="center">
+<img src="icon.png" alt="SwiftConfettiView" width="128" height="128" style="border-radius: 22%;">
+</p>
 
-SwiftConfettiView — Celebrate every moment in your app
+# SwiftConfettiView      [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Celebrate%20every%20moment%20in%20your%20app%20with%20SwiftConfettiView%20🎉&url=https://github.com/ugurethemaydin/SwiftConfettiView&hashtags=swift,ios,swiftui,confetti,opensource)
+
+**Celebrate every moment in your app**
 
 ![language](https://img.shields.io/badge/Language-%20Swift%20-orange.svg)
 ![CI Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
@@ -8,19 +12,36 @@ SwiftConfettiView — Celebrate every moment in your app
 [![License](https://img.shields.io/cocoapods/l/SwiftConfettiView.svg?style=flat)](https://cocoapods.org/pods/SwiftConfettiView)
 [![Platform](https://img.shields.io/cocoapods/p/SwiftConfettiView.svg?style=flat)](https://cocoapods.org/pods/SwiftConfettiView)
 
+<table align="center">
+<tr>
+<td align="center"><img src="demo-list.png" alt="Example app" width="200"><br><b>Example App</b></td>
+<td align="center"><video src="demo-perfect.mp4" width="200" autoplay loop muted playsinline></video><br><b>Perfect</b></td>
+<td align="center"><video src="demo-rain.mp4" width="200" autoplay loop muted playsinline></video><br><b>Default Rain</b></td>
+<td align="center"><video src="demo-point.mp4" width="200" autoplay loop muted playsinline></video><br><b>From a Point</b></td>
+</tr>
+<tr>
+<td align="center"><video src="demo-firework.mp4" width="200" autoplay loop muted playsinline></video><br><b>Firework</b></td>
+<td align="center"><video src="demo-emoji.mp4" width="200" autoplay loop muted playsinline></video><br><b>Emoji</b></td>
+<td align="center"><video src="demo-sfsymbol.mp4" width="200" autoplay loop muted playsinline></video><br><b>SF Symbol</b></td>
+<td align="center"><video src="demo-colors.mp4" width="200" autoplay loop muted playsinline></video><br><b>Custom Colors</b></td>
+</tr>
+<tr>
+<td align="center"><video src="demo-repeat.mp4" width="200" autoplay loop muted playsinline></video><br><b>Repeat Burst</b></td>
+<td align="center"><video src="demo.mp4" width="200" autoplay loop muted playsinline></video><br><b>Depth Effect</b></td>
+<td align="center"><video src="demo-uikit.mp4" width="200" autoplay loop muted playsinline></video><br><b>UIKit</b></td>
+<td></td>
+</tr>
+</table>
 
-<p align="center">
-<img src="https://user-images.githubusercontent.com/3869305/56049372-fc693c00-5d51-11e9-81af-83ecd183b1ec.gif" alt="confetti" width="473.6" height="198">
-</p>
+SwiftConfettiView is the easiest way to add fun, multi-colored confetti to your application and make users feel rewarded. Written in Swift, it is a subclass of UIView and is highly customizable — types, colors, intensity, presets, sound, and more.
 
-It's raining confetti! SwiftConfettiView is the easiest way to add fun, multi-colored confetti to your application and make users feel rewarded. Written in Swift, SwiftConfettiView is a subclass of UIView and is highly customizable. From various types and colors of confetti to different levels of intensity, you can make the confetti as fancy as you want.
-
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+To run the example project, clone the repo and run `pod install` from the Example directory.
 
 ## Requirements
 
 iOS 13.0+ · Swift 5.0+
+
+> **Upgrading from v0.1?** See the [Migration Guide](MIGRATION.md) — Xcode provides automatic Fix-it for renamed APIs.
 
 ## Installation
 
@@ -60,6 +81,40 @@ And then run:
 To manually install SwiftConfettiView, simply add `SwiftConfettiView.swift` to your project.
 
 ## Usage
+
+### Presets
+
+Get started instantly with pre-configured templates:
+
+| Preset | Effect |
+|--------|--------|
+| `.perfect` | Intense burst with depth, haptic & sound |
+| `.firework` | 360° star explosion from center |
+| `.rain` | Gentle continuous confetti rain |
+
+**UIKit:**
+
+```swift
+confettiView.applyPreset(.perfect)
+confettiView.startConfetti()
+```
+
+**SwiftUI:**
+
+```swift
+ConfettiView(preset: .perfect, isActive: $showConfetti)
+```
+
+Override specific settings after applying a preset:
+
+```swift
+// UIKit
+confettiView.applyPreset(.perfect)
+confettiView.playSound = false
+
+// SwiftUI
+ConfettiView(preset: .perfect, isActive: $isActive, playSound: false)
+```
 
 ### UIKit
 
@@ -125,6 +180,14 @@ The intensity refers to how many particles are generated and how quickly they fa
 confettiView.intensity = 0.75
 ```
 
+### Density
+
+Control how many particles fill the screen. Higher values = more particles. Default is `1.0`.
+
+```swift
+confettiView.density = 2.0  // double the particles
+```
+
 ### Emission Origin
 
 By default, confetti rains from the top edge. Set `emitterOrigin` to emit from a specific point:
@@ -166,6 +229,20 @@ Trigger haptic feedback when confetti starts:
 confettiView.hapticFeedback = true
 ```
 
+### Sound
+
+Play a built-in celebratory sound when confetti starts:
+
+```swift
+confettiView.playSound = true
+```
+
+Use a custom sound file:
+
+```swift
+confettiView.customSoundURL = Bundle.main.url(forResource: "victory", withExtension: "mp3")
+```
+
 ### Depth Effect
 
 Enable dual-layer parallax for a 3D depth illusion. A background layer (smaller, slower, dimmer particles) is added behind the main foreground layer:
@@ -192,31 +269,13 @@ confettiView.onStop = {
 }
 ```
 
-### Starting
+### Starting / Stopping / Status
 
-To start the confetti, use
-
-``` swift
-confettiView.startConfetti()
+```swift
+confettiView.startConfetti()  // start
+confettiView.stopConfetti()   // stop
+confettiView.isActive         // true while confetti is on screen
 ```
-
-### Stopping
-
-To stop the confetti, use
-
-``` swift
-confettiView.stopConfetti()
-```
-
-### Status
-
-To check if the confetti is active and currently being displayed, use
-
-``` swift
-confettiView.isActive
-```
-
-Returns `true` if it is being displayed, and `false` if it is not.
 
 ### SwiftUI — Advanced Examples
 
@@ -260,6 +319,56 @@ ConfettiView(
     isActive: $showConfetti,
     addDepth: true
 )
+```
+
+**SF Symbol confetti:**
+
+```swift
+ConfettiView(
+    type: .sfSymbol("heart.fill"),
+    colors: [.systemPink, .systemRed, .systemOrange],
+    intensity: 0.7,
+    isActive: $isActive,
+    density: 1.5
+)
+```
+
+**Custom colors:**
+
+```swift
+let palette: [UIColor] = [
+    UIColor(red: 1.0, green: 0.84, blue: 0.0, alpha: 1.0),  // gold
+    UIColor(red: 0.0, green: 0.0, blue: 0.0, alpha: 1.0),    // black
+    UIColor(red: 0.85, green: 0.85, blue: 0.88, alpha: 1.0),  // silver
+]
+
+ConfettiView(
+    type: .diamond,
+    colors: palette,
+    intensity: 0.8,
+    isActive: $isActive,
+    density: 1.5
+)
+```
+
+**Repeat burst (re-trigger on completion):**
+
+```swift
+ConfettiView(
+    type: .triangle,
+    intensity: 0.7,
+    isActive: $isActive,
+    burstCount: 120,
+    hapticFeedback: true,
+    density: 1.5
+)
+.onChange(of: isActive) { active in
+    if !active && shouldRepeat {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            isActive = true
+        }
+    }
+}
 ```
 
 ## Apps Using SwiftConfettiView
