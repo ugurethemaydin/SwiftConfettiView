@@ -205,6 +205,10 @@ public struct ConfettiView: UIViewRepresentable {
             self.isActive = isActive
         }
 
+        deinit {
+            restartTimer?.invalidate()
+        }
+
         func resetIsActive() {
             isActive.wrappedValue = false
         }

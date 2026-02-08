@@ -237,8 +237,7 @@ public class SwiftConfettiView: UIView {
         if fadeOut {
             fadeOutAndStop()
         } else {
-            foregroundEmitter?.birthRate = 0
-            backgroundEmitter?.birthRate = 0
+            cleanupEmitters()
             isActive = false
             onStop?()
         }
@@ -334,8 +333,10 @@ public class SwiftConfettiView: UIView {
     }
 
     private func cleanupEmitters() {
+        foregroundEmitter?.removeAllAnimations()
         foregroundEmitter?.removeFromSuperlayer()
         foregroundEmitter = nil
+        backgroundEmitter?.removeAllAnimations()
         backgroundEmitter?.removeFromSuperlayer()
         backgroundEmitter = nil
     }
@@ -362,8 +363,7 @@ public class SwiftConfettiView: UIView {
             CATransaction.begin()
             CATransaction.setCompletionBlock { [weak self] in
                 guard let self = self, self.emitterGeneration == capturedGeneration else { return }
-                self.foregroundEmitter?.birthRate = 0
-                self.backgroundEmitter?.birthRate = 0
+                self.cleanupEmitters()
                 self.isActive = false
                 self.onStop?()
             }
