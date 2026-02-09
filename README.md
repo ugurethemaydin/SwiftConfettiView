@@ -23,7 +23,7 @@
 <td width="240" align="center" style="border: none"><img src="demo-list.png" alt="Example app" width="220"><br><b>Example App</b></td>
 <td style="border: none; vertical-align: top; padding-left: 24px">
 
-The easiest way to add fun, multi-colored confetti to your app. Highly customizable — types, colors, intensity, presets, sound, and more.
+Add beautiful confetti animations to your iOS app in just a few lines of code. Built on CAEmitterLayer for smooth, high-performance particle rendering. Supports UIKit and SwiftUI with ready-to-use presets, burst and rain modes, haptic feedback, sound effects, and full customization of colors, shapes, and physics.
 
 **iOS 13.0+** · **Swift 5.0+**
 
@@ -403,8 +403,7 @@ ConfettiView(
  * [Qwote](https://apps.apple.com/app/id1514390362) - Capture, Format & Share quotes <br>
  *Qwote is a quick way to share text snippets or quotes as beautifully formatted images.*
 
- * [Soapbox](https://apps.apple.com/app/id1529283270) - Chat with and Make New Friends <br>
- *Good conversations don't need good lighting.*
+ * Soapbox - Chat with and Make New Friends
 
 Want your app listed here? Open a pull request or email us.
 
