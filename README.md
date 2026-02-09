@@ -18,9 +18,9 @@
 <a href="https://cocoapods.org/pods/SwiftConfettiView"><img src="https://img.shields.io/cocoapods/p/SwiftConfettiView.svg?style=flat" alt="Platform"></a>
 </p>
 
-<table align="center" border="0" cellspacing="0" cellpadding="0">
+<table border="0" cellspacing="0" cellpadding="0">
 <tr>
-<td align="center" style="border: none"><img src="demo-list.png" alt="Example app" width="220"><br><b>Example App</b></td>
+<td width="240" align="center" style="border: none"><img src="demo-list.png" alt="Example app" width="220"><br><b>Example App</b></td>
 <td style="border: none; vertical-align: top; padding-left: 24px">
 
 **SwiftConfettiView** is the easiest way to add fun, multi-colored confetti to your application and make users feel rewarded. Written in Swift, it is a subclass of UIView and is highly customizable — types, colors, intensity, presets, sound, and more.
@@ -34,6 +34,10 @@ To run the example project, clone the repo and run `pod install` from the Exampl
 </td>
 </tr>
 </table>
+
+<p align="center">
+<a href="#presets">Presets</a> · <a href="#uikit">UIKit</a> · <a href="#swiftui">SwiftUI</a> · <a href="#types">Types</a> · <a href="#colors">Colors</a> · <a href="#intensity">Intensity</a> · <a href="#density">Density</a> · <a href="#emission-origin">Emission</a> · <a href="#burst-mode">Burst</a> · <a href="#haptic-feedback">Haptic</a> · <a href="#sound">Sound</a> · <a href="#depth-effect">Depth</a> · <a href="#fade-out">Fade</a> · <a href="#callback">Callback</a> · <a href="#installation">Install</a>
+</p>
 
 <table align="center" border="0" cellspacing="0" cellpadding="16">
 <tr>
