@@ -31,13 +31,12 @@ To run the example project, clone the repo and run `pod install` from the Exampl
 
 > Upgrading from v0.1? See the [Migration Guide](MIGRATION.md)
 
+**Quick Links**
+[Presets](#presets) · [UIKit](#uikit) · [SwiftUI](#swiftui) · [Types](#types) · [Colors](#colors) · [Intensity](#intensity) · [Density](#density) · [Emission](#emission-origin) · [Burst](#burst-mode) · [Haptic](#haptic-feedback) · [Sound](#sound) · [Depth](#depth-effect) · [Fade Out](#fade-out) · [Callback](#callback) · [Install](#installation)
+
 </td>
 </tr>
 </table>
-
-<p align="center">
-<a href="#presets">Presets</a> · <a href="#uikit">UIKit</a> · <a href="#swiftui">SwiftUI</a> · <a href="#types">Types</a> · <a href="#colors">Colors</a> · <a href="#intensity">Intensity</a> · <a href="#density">Density</a> · <a href="#emission-origin">Emission</a> · <a href="#burst-mode">Burst</a> · <a href="#haptic-feedback">Haptic</a> · <a href="#sound">Sound</a> · <a href="#depth-effect">Depth</a> · <a href="#fade-out">Fade</a> · <a href="#callback">Callback</a> · <a href="#installation">Install</a>
-</p>
 
 <table align="center" border="0" cellspacing="0" cellpadding="16">
 <tr>
