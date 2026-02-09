@@ -18,9 +18,22 @@
 <a href="https://cocoapods.org/pods/SwiftConfettiView"><img src="https://img.shields.io/cocoapods/p/SwiftConfettiView.svg?style=flat" alt="Platform"></a>
 </p>
 
-<p align="center">
-<img src="demo-list.png" alt="Example app" width="220">
-</p>
+<table align="center" border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td align="center" style="border: none"><img src="demo-list.png" alt="Example app" width="220"><br><b>Example App</b></td>
+<td style="border: none; vertical-align: top; padding-left: 24px">
+
+**SwiftConfettiView** is the easiest way to add fun, multi-colored confetti to your application and make users feel rewarded. Written in Swift, it is a subclass of UIView and is highly customizable — types, colors, intensity, presets, sound, and more.
+
+To run the example project, clone the repo and run `pod install` from the Example directory.
+
+**iOS 13.0+** · **Swift 5.0+**
+
+> Upgrading from v0.1? See the [Migration Guide](MIGRATION.md)
+
+</td>
+</tr>
+</table>
 
 <table align="center" border="0" cellspacing="0" cellpadding="16">
 <tr>
@@ -45,15 +58,6 @@
 </tr>
 </table>
 
-SwiftConfettiView is the easiest way to add fun, multi-colored confetti to your application and make users feel rewarded. Written in Swift, it is a subclass of UIView and is highly customizable — types, colors, intensity, presets, sound, and more.
-
-To run the example project, clone the repo and run `pod install` from the Example directory.
-
-## Requirements
-
-iOS 13.0+ · Swift 5.0+
-
-> **Upgrading from v0.1?** See the [Migration Guide](MIGRATION.md) — Xcode provides automatic Fix-it for renamed APIs.
 
 ## Installation
 
