@@ -25,8 +25,9 @@
 
 The easiest way to add fun, multi-colored confetti to your app. Highly customizable — types, colors, intensity, presets, sound, and more.
 
-**iOS 13.0+** · **Swift 5.0+** · [Migration Guide](MIGRATION.md)
+**iOS 13.0+** · **Swift 5.0+**
 
+- [Installation](#installation)
 - [Presets](#presets)
 - [UIKit](#uikit) · [SwiftUI](#swiftui)
 - [Types](#types) · [Colors](#colors)
@@ -36,7 +37,7 @@ The easiest way to add fun, multi-colored confetti to your app. Highly customiza
 - [Haptic Feedback](#haptic-feedback) · [Sound](#sound)
 - [Depth Effect](#depth-effect) · [Fade Out](#fade-out)
 - [Callback](#callback)
-- [Installation](#installation)
+- [Using v0.1? See Migration Guide](MIGRATION.md)
 
 </td>
 </tr>
