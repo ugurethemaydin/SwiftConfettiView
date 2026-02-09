@@ -23,16 +23,20 @@
 <td width="240" align="center" style="border: none"><img src="demo-list.png" alt="Example app" width="220"><br><b>Example App</b></td>
 <td style="border: none; vertical-align: top; padding-left: 24px">
 
-**SwiftConfettiView** is the easiest way to add fun, multi-colored confetti to your application and make users feel rewarded. Written in Swift, it is a subclass of UIView and is highly customizable — types, colors, intensity, presets, sound, and more.
+The easiest way to add fun, multi-colored confetti to your app. Highly customizable — types, colors, intensity, presets, sound, and more.
 
-To run the example project, clone the repo and run `pod install` from the Example directory.
+**iOS 13.0+** · **Swift 5.0+** · [Migration Guide](MIGRATION.md)
 
-**iOS 13.0+** · **Swift 5.0+**
-
-> Upgrading from v0.1? See the [Migration Guide](MIGRATION.md)
-
-**Quick Links**
-[Presets](#presets) · [UIKit](#uikit) · [SwiftUI](#swiftui) · [Types](#types) · [Colors](#colors) · [Intensity](#intensity) · [Density](#density) · [Emission](#emission-origin) · [Burst](#burst-mode) · [Haptic](#haptic-feedback) · [Sound](#sound) · [Depth](#depth-effect) · [Fade Out](#fade-out) · [Callback](#callback) · [Install](#installation)
+- [Presets](#presets)
+- [UIKit](#uikit) · [SwiftUI](#swiftui)
+- [Types](#types) · [Colors](#colors)
+- [Intensity](#intensity) · [Density](#density)
+- [Emission Origin](#emission-origin) · [Spread](#emission-angle--spread)
+- [Burst Mode](#burst-mode)
+- [Haptic Feedback](#haptic-feedback) · [Sound](#sound)
+- [Depth Effect](#depth-effect) · [Fade Out](#fade-out)
+- [Callback](#callback)
+- [Installation](#installation)
 
 </td>
 </tr>
