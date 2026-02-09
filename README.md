@@ -22,26 +22,26 @@
 <img src="demo-list.png" alt="Example app" width="220">
 </p>
 
-<table align="center">
+<table align="center" border="0" cellspacing="0" cellpadding="16">
 <tr>
-<td align="center"><b>Perfect</b><br><video src="https://github.com/user-attachments/assets/92fdc387-a05a-426f-8d03-eb48e53c2f91" width="280" autoplay loop muted playsinline></video></td>
-<td align="center"><b>Default Rain</b><br><video src="https://github.com/user-attachments/assets/561f6fd0-84f2-4ec4-9689-144aedabb23a" width="280" autoplay loop muted playsinline></video></td>
+<td align="center" style="border: none"><b>Perfect</b><br><video src="https://github.com/user-attachments/assets/92fdc387-a05a-426f-8d03-eb48e53c2f91" width="280" autoplay loop muted playsinline></video></td>
+<td align="center" style="border: none"><b>Default Rain</b><br><video src="https://github.com/user-attachments/assets/561f6fd0-84f2-4ec4-9689-144aedabb23a" width="280" autoplay loop muted playsinline></video></td>
 </tr>
 <tr>
-<td align="center"><b>From a Point</b><br><video src="https://github.com/user-attachments/assets/1e080fbe-acbd-4bdf-aaef-c17b0dd0d8c0" width="280" autoplay loop muted playsinline></video></td>
-<td align="center"><b>Firework</b><br><video src="https://github.com/user-attachments/assets/da0c3169-1a86-4450-bcb1-c13878804fd1" width="280" autoplay loop muted playsinline></video></td>
+<td align="center" style="border: none"><b>From a Point</b><br><video src="https://github.com/user-attachments/assets/1e080fbe-acbd-4bdf-aaef-c17b0dd0d8c0" width="280" autoplay loop muted playsinline></video></td>
+<td align="center" style="border: none"><b>Firework</b><br><video src="https://github.com/user-attachments/assets/da0c3169-1a86-4450-bcb1-c13878804fd1" width="280" autoplay loop muted playsinline></video></td>
 </tr>
 <tr>
-<td align="center"><b>Emoji</b><br><video src="https://github.com/user-attachments/assets/80f22aa4-c2f6-49cc-90d0-93c7892f796c" width="280" autoplay loop muted playsinline></video></td>
-<td align="center"><b>SF Symbol</b><br><video src="https://github.com/user-attachments/assets/1728db4e-5ebc-4540-9491-3455a22ab434" width="280" autoplay loop muted playsinline></video></td>
+<td align="center" style="border: none"><b>Emoji</b><br><video src="https://github.com/user-attachments/assets/80f22aa4-c2f6-49cc-90d0-93c7892f796c" width="280" autoplay loop muted playsinline></video></td>
+<td align="center" style="border: none"><b>SF Symbol</b><br><video src="https://github.com/user-attachments/assets/1728db4e-5ebc-4540-9491-3455a22ab434" width="280" autoplay loop muted playsinline></video></td>
 </tr>
 <tr>
-<td align="center"><b>Custom Colors</b><br><video src="https://github.com/user-attachments/assets/beec1dc8-f716-46f4-bfb6-d392681e248d" width="280" autoplay loop muted playsinline></video></td>
-<td align="center"><b>Repeat Burst</b><br><video src="https://github.com/user-attachments/assets/29666ae7-57ae-4c55-80ba-e066becab00d" width="280" autoplay loop muted playsinline></video></td>
+<td align="center" style="border: none"><b>Custom Colors</b><br><video src="https://github.com/user-attachments/assets/beec1dc8-f716-46f4-bfb6-d392681e248d" width="280" autoplay loop muted playsinline></video></td>
+<td align="center" style="border: none"><b>Repeat Burst</b><br><video src="https://github.com/user-attachments/assets/29666ae7-57ae-4c55-80ba-e066becab00d" width="280" autoplay loop muted playsinline></video></td>
 </tr>
 <tr>
-<td align="center"><b>Depth Effect</b><br><video src="https://github.com/user-attachments/assets/8e84b83d-8510-4a10-ac0f-c19b79f6f554" width="280" autoplay loop muted playsinline></video></td>
-<td align="center"><b>UIKit</b><br><video src="https://github.com/user-attachments/assets/1b320105-d588-40c6-b227-47c33cc327d7" width="280" autoplay loop muted playsinline></video></td>
+<td align="center" style="border: none"><b>Depth Effect</b><br><video src="https://github.com/user-attachments/assets/8e84b83d-8510-4a10-ac0f-c19b79f6f554" width="280" autoplay loop muted playsinline></video></td>
+<td align="center" style="border: none"><b>UIKit</b><br><video src="https://github.com/user-attachments/assets/1b320105-d588-40c6-b227-47c33cc327d7" width="280" autoplay loop muted playsinline></video></td>
 </tr>
 </table>
 
