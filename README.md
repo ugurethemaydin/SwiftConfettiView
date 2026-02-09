@@ -2,15 +2,21 @@
 <img src="icon.png" alt="SwiftConfettiView" width="128" height="128" style="border-radius: 22%;">
 </p>
 
-# SwiftConfettiView      [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Celebrate%20every%20moment%20in%20your%20app%20with%20SwiftConfettiView%20🎉&url=https://github.com/ugurethemaydin/SwiftConfettiView&hashtags=swift,ios,swiftui,confetti,opensource)
+<h1 align="center">SwiftConfettiView</h1>
 
-**Celebrate every moment in your app**
+<p align="center">
+<a href="https://twitter.com/intent/tweet?text=Celebrate%20every%20moment%20in%20your%20app%20with%20SwiftConfettiView%20🎉&url=https://github.com/ugurethemaydin/SwiftConfettiView&hashtags=swift,ios,swiftui,confetti,opensource"><img src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social" alt="Tweet"></a>
+</p>
 
-![language](https://img.shields.io/badge/Language-%20Swift%20-orange.svg)
-![CI Status](https://img.shields.io/badge/build-passing-brightgreen.svg)
-[![Version](https://img.shields.io/cocoapods/v/SwiftConfettiView.svg?style=flat)](https://cocoapods.org/pods/SwiftConfettiView)
-[![License](https://img.shields.io/cocoapods/l/SwiftConfettiView.svg?style=flat)](https://cocoapods.org/pods/SwiftConfettiView)
-[![Platform](https://img.shields.io/cocoapods/p/SwiftConfettiView.svg?style=flat)](https://cocoapods.org/pods/SwiftConfettiView)
+<p align="center"><b>Celebrate every moment in your app</b></p>
+
+<p align="center">
+<img src="https://img.shields.io/badge/Language-%20Swift%20-orange.svg" alt="language">
+<img src="https://img.shields.io/badge/build-passing-brightgreen.svg" alt="CI Status">
+<a href="https://cocoapods.org/pods/SwiftConfettiView"><img src="https://img.shields.io/cocoapods/v/SwiftConfettiView.svg?style=flat" alt="Version"></a>
+<a href="https://cocoapods.org/pods/SwiftConfettiView"><img src="https://img.shields.io/cocoapods/l/SwiftConfettiView.svg?style=flat" alt="License"></a>
+<a href="https://cocoapods.org/pods/SwiftConfettiView"><img src="https://img.shields.io/cocoapods/p/SwiftConfettiView.svg?style=flat" alt="Platform"></a>
+</p>
 
 <table align="center">
 <tr>
