@@ -15,20 +15,20 @@
 <table align="center">
 <tr>
 <td align="center"><img src="demo-list.png" alt="Example app" width="200"><br><b>Example App</b></td>
-<td align="center"><video src="demo-perfect.mp4" width="200" autoplay loop muted playsinline></video><br><b>Perfect</b></td>
-<td align="center"><video src="demo-rain.mp4" width="200" autoplay loop muted playsinline></video><br><b>Default Rain</b></td>
-<td align="center"><video src="demo-point.mp4" width="200" autoplay loop muted playsinline></video><br><b>From a Point</b></td>
+<td align="center"><video src="https://github.com/user-attachments/assets/92fdc387-a05a-426f-8d03-eb48e53c2f91" width="200" autoplay loop muted playsinline></video><br><b>Perfect</b></td>
+<td align="center"><video src="https://github.com/user-attachments/assets/561f6fd0-84f2-4ec4-9689-144aedabb23a" width="200" autoplay loop muted playsinline></video><br><b>Default Rain</b></td>
+<td align="center"><video src="https://github.com/user-attachments/assets/1e080fbe-acbd-4bdf-aaef-c17b0dd0d8c0" width="200" autoplay loop muted playsinline></video><br><b>From a Point</b></td>
 </tr>
 <tr>
-<td align="center"><video src="demo-firework.mp4" width="200" autoplay loop muted playsinline></video><br><b>Firework</b></td>
-<td align="center"><video src="demo-emoji.mp4" width="200" autoplay loop muted playsinline></video><br><b>Emoji</b></td>
-<td align="center"><video src="demo-sfsymbol.mp4" width="200" autoplay loop muted playsinline></video><br><b>SF Symbol</b></td>
-<td align="center"><video src="demo-colors.mp4" width="200" autoplay loop muted playsinline></video><br><b>Custom Colors</b></td>
+<td align="center"><video src="https://github.com/user-attachments/assets/da0c3169-1a86-4450-bcb1-c13878804fd1" width="200" autoplay loop muted playsinline></video><br><b>Firework</b></td>
+<td align="center"><video src="https://github.com/user-attachments/assets/80f22aa4-c2f6-49cc-90d0-93c7892f796c" width="200" autoplay loop muted playsinline></video><br><b>Emoji</b></td>
+<td align="center"><video src="https://github.com/user-attachments/assets/1728db4e-5ebc-4540-9491-3455a22ab434" width="200" autoplay loop muted playsinline></video><br><b>SF Symbol</b></td>
+<td align="center"><video src="https://github.com/user-attachments/assets/beec1dc8-f716-46f4-bfb6-d392681e248d" width="200" autoplay loop muted playsinline></video><br><b>Custom Colors</b></td>
 </tr>
 <tr>
-<td align="center"><video src="demo-repeat.mp4" width="200" autoplay loop muted playsinline></video><br><b>Repeat Burst</b></td>
-<td align="center"><video src="demo.mp4" width="200" autoplay loop muted playsinline></video><br><b>Depth Effect</b></td>
-<td align="center"><video src="demo-uikit.mp4" width="200" autoplay loop muted playsinline></video><br><b>UIKit</b></td>
+<td align="center"><video src="https://github.com/user-attachments/assets/29666ae7-57ae-4c55-80ba-e066becab00d" width="200" autoplay loop muted playsinline></video><br><b>Repeat Burst</b></td>
+<td align="center"><video src="https://github.com/user-attachments/assets/8e84b83d-8510-4a10-ac0f-c19b79f6f554" width="200" autoplay loop muted playsinline></video><br><b>Depth Effect</b></td>
+<td align="center"><video src="https://github.com/user-attachments/assets/1b320105-d588-40c6-b227-47c33cc327d7" width="200" autoplay loop muted playsinline></video><br><b>UIKit</b></td>
 <td></td>
 </tr>
 </table>
