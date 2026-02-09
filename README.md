@@ -18,42 +18,49 @@
 <a href="https://cocoapods.org/pods/SwiftConfettiView"><img src="https://img.shields.io/cocoapods/p/SwiftConfettiView.svg?style=flat" alt="Platform"></a>
 </p>
 
-<div align="center">
+<p align="center">
+<img src="demo-list.png" alt="Example app" width="220">
+</p>
 
-<b>Example App</b><br>
-<img src="demo-list.png" alt="Example app" width="200">
-
-<b>Perfect</b><br>
+<p align="center">
+<b>Perfect</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Default Rain</b>
+</p>
+<p align="center">
 <video src="https://github.com/user-attachments/assets/92fdc387-a05a-426f-8d03-eb48e53c2f91" width="280" autoplay loop muted playsinline></video>
-
-<b>Default Rain</b><br>
 <video src="https://github.com/user-attachments/assets/561f6fd0-84f2-4ec4-9689-144aedabb23a" width="280" autoplay loop muted playsinline></video>
+</p>
 
-<b>From a Point</b><br>
+<p align="center">
+<b>From a Point</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Firework</b>
+</p>
+<p align="center">
 <video src="https://github.com/user-attachments/assets/1e080fbe-acbd-4bdf-aaef-c17b0dd0d8c0" width="280" autoplay loop muted playsinline></video>
-
-<b>Firework</b><br>
 <video src="https://github.com/user-attachments/assets/da0c3169-1a86-4450-bcb1-c13878804fd1" width="280" autoplay loop muted playsinline></video>
+</p>
 
-<b>Emoji</b><br>
+<p align="center">
+<b>Emoji</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>SF Symbol</b>
+</p>
+<p align="center">
 <video src="https://github.com/user-attachments/assets/80f22aa4-c2f6-49cc-90d0-93c7892f796c" width="280" autoplay loop muted playsinline></video>
-
-<b>SF Symbol</b><br>
 <video src="https://github.com/user-attachments/assets/1728db4e-5ebc-4540-9491-3455a22ab434" width="280" autoplay loop muted playsinline></video>
+</p>
 
-<b>Custom Colors</b><br>
+<p align="center">
+<b>Custom Colors</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>Repeat Burst</b>
+</p>
+<p align="center">
 <video src="https://github.com/user-attachments/assets/beec1dc8-f716-46f4-bfb6-d392681e248d" width="280" autoplay loop muted playsinline></video>
-
-<b>Repeat Burst</b><br>
 <video src="https://github.com/user-attachments/assets/29666ae7-57ae-4c55-80ba-e066becab00d" width="280" autoplay loop muted playsinline></video>
+</p>
 
-<b>Depth Effect</b><br>
+<p align="center">
+<b>Depth Effect</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>UIKit</b>
+</p>
+<p align="center">
 <video src="https://github.com/user-attachments/assets/8e84b83d-8510-4a10-ac0f-c19b79f6f554" width="280" autoplay loop muted playsinline></video>
-
-<b>UIKit</b><br>
 <video src="https://github.com/user-attachments/assets/1b320105-d588-40c6-b227-47c33cc327d7" width="280" autoplay loop muted playsinline></video>
-
-</div>
+</p>
 
 SwiftConfettiView is the easiest way to add fun, multi-colored confetti to your application and make users feel rewarded. Written in Swift, it is a subclass of UIView and is highly customizable — types, colors, intensity, presets, sound, and more.
 
