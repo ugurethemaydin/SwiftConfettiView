@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
   s.summary          = 'Celebrate every moment in your app'
 
   s.description      = <<-DESC
-  SwiftConfettiView is the quickest way to add confetti to your application and make your users feel rewarded.
+  Add beautiful confetti animations to your iOS app in just a few lines of code. Built on CAEmitterLayer for smooth, high-performance particle rendering. Supports UIKit and SwiftUI with ready-to-use presets, burst and rain modes, haptic feedback, sound effects, and full customization of colors, shapes, and physics.
                        DESC
 
   s.homepage         = 'https://github.com/ugurethemaydin/SwiftConfettiView'
