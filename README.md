@@ -405,6 +405,9 @@ ConfettiView(
 
  * Soapbox - Chat with and Make New Friends
 
+ * [CubeFlow](https://cubeflow.com.cn) - A native speedcubing companion for Apple platforms <br>
+ *Time your solves, learn algorithms, track statistics, connect smart cubes, and explore competitions — all in one app.*
+
 Want your app listed here? Open a pull request or email us.
 
 ## Other Libraries
